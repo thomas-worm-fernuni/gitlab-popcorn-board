@@ -5,40 +5,58 @@
       color="primary"
       dark
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+      <div class="d-flex align-left">
+        <h1>POPCORN board</h1>
       </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+        
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <v-container fluid="true">
+        <v-row>
+          <v-col cols="1">
+            <div>
+              <v-img src="assets/popcorn/problems.png" contain="true" height="200" />
+            </div>
+          </v-col>
+          <v-col cols="2">
+            <div>
+              <v-img src="assets/popcorn/options.png" contain="true" height="200" />
+            </div>
+          </v-col>
+          <v-col cols="2">
+            <div>
+              <v-img src="assets/popcorn/possible-experiments.png" contain="true" height="200" />
+            </div>
+          </v-col>
+          <v-col cols="2">
+            <div>
+              <v-img src="assets/popcorn/commited.png" contain="true" height="200" />
+            </div>
+          </v-col>
+          <v-col cols="2">
+            <div>
+              <v-img src="assets/popcorn/ongoing.png" contain="true" height="200" />
+            </div>
+          </v-col>
+          <v-col cols="2">
+            <div>
+              <v-img src="assets/popcorn/review.png" contain="true" height="200" />
+            </div>
+          </v-col>
+          <v-col cols="1">
+            <div>
+              <v-img src="assets/popcorn/next.png" contain="true" height="200" />
+            </div>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12">
+            <HelloWorld/>
+          </v-col>
+        </v-row>
+      </v-container>
     </v-main>
   </v-app>
 </template>
